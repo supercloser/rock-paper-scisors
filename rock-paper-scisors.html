@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/rps.css">
+        <title></title>
+
+    </head>
+    <body>
+        <h1>Rock, Paper, Scisors game!</h1>
+        <button class="move-button" onclick="
+        playGame('ROCK')">
+            <img class= 'image-resize' src = "images/ROCK.png"><img>
+        </button>
+        <button class ="move-button" onclick="
+        playGame('PAPER')">
+            <img class= 'image-resize' src = "images/PAPER.png"><img>
+        </button>
+        <button class ="move-button" onclick="
+        playGame('SCISORS')">
+            <img class= 'image-resize' src = "images/SCISORS.png"><img>
+        </button>
+        <h3 id = 'gameWinner'></h3>
+        <h3 id = 'scoreText'>Current score: </h3>
+        <button class ="reset-button" onclick="
+        score.resetScore()">
+        Reset score
+        </button>
+        
+        <script src="scripts/rps.js"></script>
+    </body>
+</html>
